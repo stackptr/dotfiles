@@ -5,4 +5,5 @@
 
 REPO=$(dirname $0)
 
+ln -s $REPO/.tmux.conf ~/.tmux.conf
 ln -s $REPO/.zshrc ~/.zshrc
