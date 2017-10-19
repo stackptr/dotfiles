@@ -22,7 +22,6 @@ set -g set-titles on
 set -g set-titles-string '#(whoami) :: #h :: #(curl ipecho.net/plain;echo)'
 
 # Set status bar
-set -g status-utf8 on
 set -g status-bg black
 set -g status-fg white
 set -g status-interval 5
@@ -31,3 +30,17 @@ set -g status-right-length 60
 set -g status-left "#[fg=Green]#(whoami)#[fg=white]::#[fg=blue]#(hostname -s)#[fg=white]::#[fg=yellow]#(curl ipecho.net/plain;echo)"
 set -g status-justify left
 set -g status-right '#[fg=Cyan]#S #[fg=white]%a %d %b %R'
+
+# Source remote pbcopy/pbpaste commands
+if-shell 'test "$(uname)" = "Linux"' 'source ~/.tmux-linux.conf'
+
+# List of plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+set -g @plugin 'nhdaly/tmux-better-mouse-mode'
+set -g @plugin 'tmux-plugins/tmux-yank'
+set-option -g default-command "reattach-to-user-namespace -l $SHELL"
+
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run '~/.tmux/plugins/tpm/tpm'
