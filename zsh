@@ -27,6 +27,7 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 alias git=hub
 alias ssh=mosh
+alias vim=nvim
 
 export PATH="/usr/local/sbin:$PATH"
 
