@@ -3,7 +3,7 @@
 ### dotfiles install script
 ### github/stackptr
 
-REPO=$(dirname $0)
+REPO=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
-ln -s $REPO/.tmux.conf ~/.tmux.conf
-ln -s $REPO/.zshrc ~/.zshrc
+ln -s $REPO/tmux ~/.tmux.conf
+ln -s $REPO/zsh ~/.zshrc
