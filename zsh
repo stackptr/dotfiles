@@ -28,6 +28,7 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 alias git=hub
 alias ssh=mosh
 alias vim=nvim
+alias login-ecr=$(AWS_PROFILE=dev aws ecr get-login --registry-ids 853032795538 --no-include-email)
 
 export PATH="/usr/local/sbin:$PATH"
 
