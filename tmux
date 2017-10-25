@@ -27,7 +27,7 @@ set -g status-fg white
 set -g status-interval 5
 set -g status-left-length 90
 set -g status-right-length 60
-set -g status-left "#[fg=Green]#(whoami)#[fg=white]::#[fg=blue]#(hostname -s)#[fg=white]::#[fg=yellow]#(curl ipecho.net/plain;echo)"
+set -g status-left "#[fg=Green]#(whoami)#[fg=white]::#[fg=blue]#(hostname -s)#[fg=white]::#[fg=yellow]#(curl ipecho.net/plain;echo) - "
 set -g status-justify left
 set -g status-right '#[fg=Cyan]#S #[fg=white]%a %d %b %R'
 
@@ -39,6 +39,10 @@ unbind-key -T copy-mode-vi Enter     ;   bind-key -T copy-mode-vi y send-keys -X
 unbind-key -T copy-mode-vi C-v       ;   bind-key -T copy-mode-vi C-v send-keys -X rectangle-toggle
 unbind-key -T copy-mode-vi [         ;   bind-key -T copy-mode-vi [ send-keys -X begin-selection
 unbind-key -T copy-mode-vi ]         ;   bind-key -T copy-mode-vi ] send-keys -X copy-selection
+
+# Count windows and panes from 1 instead of 0
+set -g base-index 1
+set-window-option -g pane-base-index 1
 
 # Source remote pbcopy/pbpaste commands
 if-shell 'test "$(uname)" = "Linux"' 'source ~/.tmux-linux.conf'
