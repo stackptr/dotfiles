@@ -14,6 +14,7 @@ Aliases:
 - `mosh` replaces `ssh`
 - `hub` replaces `git`
 - `nvim` replaces `vim`
+- `ccat` replaces `cat`
 
 ### tmux
 
