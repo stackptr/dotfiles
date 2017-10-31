@@ -6,7 +6,7 @@
 export ZSH=/Users/corey/.oh-my-zsh
 
 ZSH_THEME="robbyrussell"
-plugins=(git yarn osx zsh-nvm zsh-better-npm-completion)
+plugins=(git yarn osx zsh-nvm zsh-better-npm-completion k)
 source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
@@ -42,7 +42,6 @@ export PATH=${PATH}:/Applications/Postgres.app/Contents/Versions/latest/bin
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Hacky nvm default. https://github.com/creationix/nvm/issues/860
 export PATH=/Users/corey/.nvm/versions/node/v6.9.1/bin:$PATH
