@@ -45,4 +45,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Hacky nvm default. https://github.com/creationix/nvm/issues/860
-export PATH=/Users/corey/.nvm/versions/node/v6.9.1/bin/:$PATH
+export PATH=/Users/corey/.nvm/versions/node/v6.9.1/bin:$PATH
