@@ -29,7 +29,7 @@ alias git=hub
 alias ssh=mosh
 alias vim=nvim
 alias cat=ccat
-alias login-ecr=$(AWS_PROFILE=dev aws ecr get-login --registry-ids 853032795538 --no-include-email)
+alias login-ecr='`AWS_PROFILE=dev aws ecr get-login --registry-ids 853032795538 --no-include-email`'
 
 export PATH="/usr/local/sbin:$PATH"
 
@@ -45,3 +45,9 @@ export NVM_DIR="$HOME/.nvm"
 
 # Hacky nvm default. https://github.com/creationix/nvm/issues/860
 export PATH=/Users/corey/.nvm/versions/node/v6.9.1/bin:$PATH
+
+### Bashhub.com Installation
+if [ -f ~/.bashhub/bashhub.zsh ]; then
+    source ~/.bashhub/bashhub.zsh
+fi
+
