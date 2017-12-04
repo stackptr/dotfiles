@@ -8,3 +8,4 @@ REPO=$(cd "$(dirname "$0")" && printf "%s\n" "$PWD")
 ln -snf $REPO/zsh ~/.zshrc
 ln -snf $REPO/tmux ~/.tmux.conf
 ln -snf $REPO/tmux-linux ~/.tmux-linux.conf
+ln -snf $REPO/finicky.js ~/.finicky.js
