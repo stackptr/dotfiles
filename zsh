@@ -30,6 +30,7 @@ alias ssh=mosh
 alias vim=nvim
 alias cat=ccat
 alias login-ecr='`AWS_PROFILE=dev aws ecr get-login --registry-ids 853032795538 --no-include-email`'
+alias man=tldr
 
 export PATH="/usr/local/sbin:$PATH"
 
