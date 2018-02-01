@@ -38,6 +38,7 @@ export PATH="$HOME/.local/bin:/usr/local/sbin:$PATH"
 # Development
 export FR_DOCKERHOST=docker.for.mac.localhost
 
+# Expose Postgres command line tool
 export PATH=${PATH}:/Applications/Postgres.app/Contents/Versions/latest/bin
 
 # nvm initialization
