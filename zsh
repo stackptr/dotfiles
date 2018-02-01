@@ -38,10 +38,6 @@ export PATH="$HOME/.local/bin:/usr/local/sbin:$PATH"
 # Development
 export FR_DOCKERHOST=docker.for.mac.localhost
 
-# Android Studio
-export ANDROID_HOME=${HOME}/Library/Android/sdk
-export PATH=${PATH}:${ANDROID_HOME}/tools
-export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 export PATH=${PATH}:/Applications/Postgres.app/Contents/Versions/latest/bin
 
 # nvm initialization
