@@ -31,8 +31,12 @@ alias vim=nvim
 alias cat=ccat
 alias login-ecr='`AWS_PROFILE=dev aws ecr get-login --registry-ids 853032795538 --no-include-email`'
 alias man=tldr
+alias incog='unset HISTFILE'
 
-export PATH="/usr/local/sbin:$PATH"
+export PATH="$HOME/.local/bin:/usr/local/sbin:$PATH"
+
+# Development
+export FR_DOCKERHOST=docker.for.mac.localhost
 
 # Android Studio
 export ANDROID_HOME=${HOME}/Library/Android/sdk
@@ -51,4 +55,3 @@ export PATH=/Users/corey/.nvm/versions/node/v6.9.1/bin:$PATH
 if [ -f ~/.bashhub/bashhub.zsh ]; then
     source ~/.bashhub/bashhub.zsh
 fi
-
