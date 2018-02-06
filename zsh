@@ -33,13 +33,20 @@ alias login-ecr='`AWS_PROFILE=dev aws ecr get-login --registry-ids 853032795538 
 alias man=tldr
 alias incog='unset HISTFILE'
 
-export PATH="$HOME/.local/bin:/usr/local/sbin:$PATH"
+path=(
+  $HOME/.local/bin
+  /usr/local/sbin
+  $path
+)
 
 # Development
 export FR_DOCKERHOST=docker.for.mac.localhost
 
 # Expose Postgres command line tool
-export PATH=${PATH}:/Applications/Postgres.app/Contents/Versions/latest/bin
+path=(
+  $path
+  /Applications/Postgres.app/Contents/Versions/latest/bin
+)
 
 # nvm initialization
 # Defer initialization of nvm until nvm, node or a node-dependent command is
