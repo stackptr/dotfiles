@@ -25,7 +25,9 @@ finicky.onUrl(function(url, opts) {
 
 const workUrls = [
   /^https?:\/\/github\.com\/frontrowed/,
-  /^https?:\/\/frontrow\.atlassian\.net/
+  /^https?:\/\/frontrow\.atlassian\.net/,
+  /^https?:\/\/email\.circleci\.com/,
+  /^https?:\/\/.*.bugsnag.com/
 ];
 
 // Frontrow Github links in work browser
