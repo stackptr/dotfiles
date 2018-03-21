@@ -27,7 +27,8 @@ const workUrls = [
   /^https?:\/\/github\.com\/frontrowed/,
   /^https?:\/\/frontrow\.atlassian\.net/,
   /^https?:\/\/email\.circleci\.com/,
-  /^https?:\/\/.*.bugsnag.com/
+  /^https?:\/\/circleci\.com\/gh\/frontrowed/,
+  /^https?:\/\/.*.bugsnag\.com/
 ];
 
 // Frontrow Github links in work browser
