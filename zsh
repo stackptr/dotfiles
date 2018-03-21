@@ -70,3 +70,5 @@ fi
 if [ -f ~/.bashhub/bashhub.zsh ]; then
     source ~/.bashhub/bashhub.zsh
 fi
+
+source ~/.zsh-dev
