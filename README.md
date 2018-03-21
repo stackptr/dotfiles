@@ -2,6 +2,15 @@
 
 ## Dependencies
 
+### rcm
+
+Use [rcm](https://github.com/thoughtbot/rcm) to install dotfiles:
+
+```
+git clone stackptr/dotfiles .dotfiles
+rcup -d .dotfiles -x README.md -v
+```
+
 ### zsh
 
 oh-my-zsh:
