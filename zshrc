@@ -42,12 +42,6 @@ path=(
 # Development
 export FR_DOCKERHOST=docker.for.mac.localhost
 
-# Expose Postgres command line tool
-path=(
-  $path
-  /Applications/Postgres.app/Contents/Versions/latest/bin
-)
-
 # nvm initialization
 # Defer initialization of nvm until nvm, node or a node-dependent command is
 # run. Ensure this block is only run once if .bashrc gets sourced multiple times
@@ -72,3 +66,6 @@ if [ -f ~/.bashhub/bashhub.zsh ]; then
 fi
 
 source ~/.zsh-dev
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
+
