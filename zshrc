@@ -35,6 +35,7 @@ alias incog='unset HISTFILE'
 
 path=(
   $HOME/.local/bin
+  $HOME/Development/bin
   /usr/local/sbin
   $path
 )
