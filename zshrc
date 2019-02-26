@@ -1,14 +1,6 @@
 ### zsh config (~/.zshrc)
 ### github/stackptr
 
-## oh-my-zsh configuration
-
-export ZSH=/Users/corey/.oh-my-zsh
-
-ZSH_THEME=""
-plugins=(git yarn osx zsh-nvm zsh-better-npm-completion k)
-source $ZSH/oh-my-zsh.sh
-
 # Use Pure prompt
 autoload -U promptinit; promptinit
 prompt pure
