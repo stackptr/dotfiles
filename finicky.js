@@ -24,14 +24,14 @@ finicky.onUrl(function(url, opts) {
 });
 
 const workUrls = [
-  /^https?:\/\/github\.com\/frontrowed/,
+  /^https?:\/\/github\.com\/freckle/,
   /^https?:\/\/frontrow\.atlassian\.net/,
   /^https?:\/\/email\.circleci\.com/,
-  /^https?:\/\/circleci\.com\/gh\/frontrowed/,
+  /^https?:\/\/circleci\.com\/gh\/freckle/,
   /^https?:\/\/.*.bugsnag\.com/
 ];
 
-// Frontrow Github links in work browser
+// Freckle-related links in work browser
 finicky.onUrl(function(url, opts) {
   if (workUrls.some(regex => regex.test(url))) {
 	  return {
