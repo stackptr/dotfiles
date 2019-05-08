@@ -33,12 +33,14 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 
 ## Aliases / defaults
+set_alias () {
+  type $2 >/dev/null 2>&1 && alias $1=$2
+}
 
-alias git=hub
-alias ssh=mosh
-alias vim=nvim
-alias cat=ccat
-alias man=tldr
+set_alias git hub
+set_alias ssh mosh
+set_alias cat ccat
+set_alias man tldr
 alias incog='unset HISTFILE'
 
 path=(
