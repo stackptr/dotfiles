@@ -75,7 +75,6 @@ if [ -f ~/.bashhub/bashhub.zsh ]; then
     source ~/.bashhub/bashhub.zsh
 fi
 
-source ~/.zsh-dev
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
 
