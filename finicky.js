@@ -1,27 +1,17 @@
-// Finicky config (~/.finicky.js)
-// github/stackptr
-
-const safari = 'com.apple.safari';
-const chrome = 'com.google.Chrome';
+const safari = 'Safari';
+const chrome = 'Google Chrome';
 
 const personalBrowser = safari;
-const workBrowser = [chrome, safari]; // Always fallback to personal browser
-
-
-// Default
-finicky.setDefaultBrowser(personalBrowser)
+const workBrowser = chrome;
 
 // Note: finicky.log() is useful for debugging
 
 // Always open links from Slack in work browser
-finicky.onUrl(function(url, opts) {
-  const sourceApplication = opts && opts.sourceBundleIdentifier
-  if (sourceApplication === 'com.tinyspeck.slackmacgap') {
-    return {
-      bundleIdentifier: workBrowser
-    }
-  }
-});
+const slackIdentifier = 'com.tinyspeck.slackmacgap'
+const slackHandler = {
+  match: ({ sourceBundleIdentifier }) => sourceBundleIdentifier === slackIdentifier,
+  browser: workBrowser
+};
 
 const workUrls = [
   /^https?:\/\/github\.com\/freckle/,
@@ -32,10 +22,15 @@ const workUrls = [
 ];
 
 // Freckle-related links in work browser
-finicky.onUrl(function(url, opts) {
-  if (workUrls.some(regex => regex.test(url))) {
-	  return {
-      bundleIdentifier: workBrowser
-    }
-  }
-});
+const workUrlsHandler = {
+  match: finicky.matchDomains(workUrls),
+  browser: workBrowser
+};
+
+module.exports = {
+  defaultBrowser: personalBrowser,
+  options: {
+    hideIcon: false
+  },
+  handlers: [slackHandler, workUrlsHandler]
+};
