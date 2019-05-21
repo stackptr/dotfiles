@@ -87,4 +87,4 @@ source /usr/local/share/zsh-history-substring-search/zsh-history-substring-searc
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
-eval "$(pyenv init -)"
+type pyenv >/dev/null 2>&1 && eval "$(pyenv init -)"
