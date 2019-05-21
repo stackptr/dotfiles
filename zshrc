@@ -47,6 +47,7 @@ path=(
   $HOME/.local/bin
   $HOME/Development/bin
   /usr/local/sbin
+  $HOME/.rbenv/bin
   $path
 )
 
@@ -88,3 +89,4 @@ bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
 type pyenv >/dev/null 2>&1 && eval "$(pyenv init -)"
+type rbenv >/dev/null 2>&1 && eval "$(rbenv init -)"
