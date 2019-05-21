@@ -23,7 +23,7 @@ const workUrls = [
 
 // Freckle-related links in work browser
 const workUrlsHandler = {
-  match: finicky.matchDomains(workUrls),
+  match: workUrls,
   browser: workBrowser
 };
 
