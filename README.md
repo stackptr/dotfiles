@@ -32,8 +32,16 @@ Aliases:
 
 ### tmux
 
-Plugin manager:
+To setup tmux with [tpm](https://github.com/tmux-plugins/tpm) and support macOS pasteboard commands via [reattach-to-user-namespace](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard):
 
-```
+```sh
+# Get dependency from homebrew:
+brew install reattach-to-user-namespace
+
+# Setup TPM and start tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+tmux
+
+# Fetch and source plugins
+$TMUX_PLUGIN_MANAGER_PATH/tpm/scripts/install_plugins.sh
 ```
