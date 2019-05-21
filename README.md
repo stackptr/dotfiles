@@ -30,9 +30,6 @@ Aliases:
 - `nvim` replaces `vim`
 - `ccat` replaces `cat`
 
-Plugins:
-- [k](https://github.com/supercrabtree/k)
-
 ### tmux
 
 Plugin manager:
