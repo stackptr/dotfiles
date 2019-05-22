@@ -54,6 +54,9 @@ path=(
 
 # Development
 export FR_DOCKERHOST=docker.for.mac.localhost
+if [ -f ~/.zshrc-dev ]; then
+    source ~/.zshrc-dev
+fi
 
 # nvm initialization
 # Defer initialization of nvm until nvm, node or a node-dependent command is
