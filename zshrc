@@ -49,6 +49,7 @@ path=(
   /usr/local/sbin
   $HOME/.rbenv/bin
   $path
+  /usr/local/opt/openssl/bin
 )
 
 # Development
@@ -76,9 +77,6 @@ fi
 if [ -f ~/.bashhub/bashhub.zsh ]; then
     source ~/.bashhub/bashhub.zsh
 fi
-
-export PATH="/usr/local/opt/openssl/bin:$PATH"
-export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
 
 # Syntax highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
