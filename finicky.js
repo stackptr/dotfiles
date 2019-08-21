@@ -18,7 +18,9 @@ const workUrls = [
   /^https?:\/\/frontrow\.atlassian\.net/,
   /^https?:\/\/email\.circleci\.com/,
   /^https?:\/\/circleci\.com\/gh\/freckle/,
-  /^https?:\/\/.*.bugsnag\.com/
+  /^https?:\/\/.*.bugsnag\.com/,
+  /^https?:\/\/zpl.io/,
+  /^https?:\/\/.*.office365.com/
 ];
 
 // Freckle-related links in work browser
