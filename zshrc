@@ -1,8 +1,9 @@
 ### zsh config (~/.zshrc)
 ### github/stackptr
 
-# Setup completions installed via Homebrew
-FPATH="/opt/homebrew/share/zsh/site-functions:${FPATH}"
+# Include Homebrew in PATH and setup completions
+PATH=/opt/homebrew/bin:$PATH
+FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 
 # Use Pure prompt
 autoload -U promptinit; promptinit
