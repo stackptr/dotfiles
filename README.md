@@ -29,6 +29,7 @@ Aliases:
 - `hub` replaces `git`
 - `nvim` replaces `vim`
 - `ccat` replaces `cat`
+- `tldr` replaces `man`
 
 ### Recommended tools
 
