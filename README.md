@@ -34,3 +34,4 @@ Aliases:
 
 - [tpm](https://github.com/tmux-plugins/tpm) - Tmux plugin manager
 - [nvm](https://github.com/nvm-sh/nvm) - manage versions of Node
+- [gh](https://github.com/cli/cli) - Github CLI
