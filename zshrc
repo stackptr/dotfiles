@@ -44,7 +44,6 @@ set_alias () {
 set_alias git hub
 set_alias ssh mosh
 set_alias cat ccat
-set_alias man tldr
 alias incog='unset HISTFILE'
 
 path=(
