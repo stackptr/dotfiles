@@ -47,7 +47,6 @@ path=(
   $HOME/.local/bin
   $HOME/Development/bin
   /usr/local/sbin
-  $HOME/.rbenv/bin
   $path
   /usr/local/opt/openssl/bin
 )
