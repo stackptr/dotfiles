@@ -28,5 +28,6 @@ Aliases:
 ### Recommended tools
 
 - [tpm](https://github.com/tmux-plugins/tpm) - Tmux plugin manager
+- [reattach-to-user-namespace](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard) - Supports macOS pasteboard commands
 - [nvm](https://github.com/nvm-sh/nvm) - manage versions of Node
 - [gh](https://github.com/cli/cli) - Github CLI
