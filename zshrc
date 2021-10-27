@@ -30,7 +30,7 @@ else
 fi
 
 # Compilation flags
-export ARCHFLAGS="-arch x86_64"
+export ARCHFLAGS="-arch arm64"
 
 # ssh
 export SSH_KEY_PATH="~/.ssh/rsa_id"
