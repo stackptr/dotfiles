@@ -46,7 +46,9 @@ alias incog='unset HISTFILE'
 path=(
   $HOME/.local/bin
   $HOME/Development/bin
-  /usr/local/sbin
+  /opt/homebrew/bin
+  /opt/homebrew/sbin
+  /opt/homebrew/share/zsh/site-functions
   $path
   /usr/local/opt/openssl/bin
 )
