@@ -1,8 +1,8 @@
 ### zsh config (~/.zshrc)
 ### github/stackptr
 
-# Support pure on Apple Silicon
-fpath+=/opt/homebrew/share/zsh/site-functions
+# Setup completions installed via Homebrew
+FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
 
 # Use Pure prompt
 autoload -U promptinit; promptinit
