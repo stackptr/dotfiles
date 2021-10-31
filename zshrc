@@ -32,6 +32,8 @@ fi
 
 # Compilation flags
 export ARCHFLAGS="-arch arm64"
+export CPATH="$HOMEBREW_PREFIX/include"
+export LIBRARY_PATH="$HOMEBREW_PREFIX/lib"
 
 # ssh
 export SSH_KEY_PATH="~/.ssh/rsa_id"
