@@ -1,6 +1,6 @@
 # dotfiles
 
-Configurations and tooling for macOS setup.
+Configurations, tooling, and tips for macOS setup.
 
 ## Configuration
 
@@ -34,6 +34,10 @@ Aliases:
 - [nvm][nvm] - manage versions of Node
 - [gh][gh-cli] - Github CLI
 
+## Tips
+
+- [Quit Confirmation for Safari][quit-safari]: Remap ⌘Q to warn before quitting using FastScripts
+
 [rcm]: https://github.com/thoughtbot/rcm
 [pure]: https://github.com/sindresorhus/pure
 [zsh-highlight]: https://github.com/zsh-users/zsh-syntax-highlighting
@@ -46,3 +50,4 @@ Aliases:
 [tpm]: https://github.com/tmux-plugins/tpm
 [tmux-reattach]: https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
 [nvm]: https://github.com/nvm-sh/nvm
+[quit-safari]: https://daringfireball.net/2020/01/quit_confirmation_for_safari_on_macos
