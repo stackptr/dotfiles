@@ -11,7 +11,7 @@ Use [rcm][rcm] to install dotfiles:
 ```
 cd ~
 git clone stackptr/dotfiles .dotfiles
-rcup -d .dotfiles -x README.md -v
+rcup -d .dotfiles -v
 ```
 
 ### zsh

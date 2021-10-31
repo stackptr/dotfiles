@@ -1,1 +1,2 @@
 HOSTNAME="aleph"
+EXCLUDES="README.md"
