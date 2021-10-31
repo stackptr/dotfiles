@@ -27,6 +27,10 @@ Aliases:
 - [`nvim`][neovim] replaces `vim` 
 - [`ccat`][ccat] adds syntax highlighting to `cat`
 
+### Terminal profile
+
+A modified version of [terminal-snazzy][snazzy] is checked in and can be added via `Terminal.app` `Preferences` > `Profiles`. Make to mark as `Default` to apply to newly spawned windows.
+
 ## Tools
 
 - [tpm][tpm] - Tmux plugin manager
@@ -47,6 +51,7 @@ Aliases:
 [gh-cli]: https://github.com/cli/cli
 [neovim]: https://neovim.io
 [ccat]: https://github.com/jingweno/ccat
+[snazzy]: https://github.com/sindresorhus/terminal-snazzy
 [tpm]: https://github.com/tmux-plugins/tpm
 [tmux-reattach]: https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
 [nvm]: https://github.com/nvm-sh/nvm
