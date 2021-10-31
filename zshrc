@@ -3,7 +3,8 @@
 
 # Include Homebrew in PATH and setup completions
 PATH=/opt/homebrew/bin:$PATH
-FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+HOMEBREW_PREFIX=$(brew --prefix)
+FPATH="$HOMEBREW_PREFIX/share/zsh/site-functions:${FPATH}"
 
 # Use Pure prompt
 autoload -U promptinit; promptinit
@@ -49,11 +50,10 @@ alias incog='unset HISTFILE'
 path=(
   $HOME/.local/bin
   $HOME/Development/bin
-  /opt/homebrew/bin
-  /opt/homebrew/sbin
-  /opt/homebrew/share/zsh/site-functions
+  $HOMEBREW_PREFIX/bin
+  $HOMEBREW_PREFIX/sbin
   $path
-  /usr/local/opt/openssl/bin
+  $HOMEBREW_PREFIX/opt/openssl/bin
 )
 
 # Development
