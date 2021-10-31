@@ -2,7 +2,10 @@
 ### github/stackptr
 
 # Include Homebrew in PATH and setup completions
-PATH=/opt/homebrew/bin:$PATH
+if [[ "$(uname -m)" == "arm64" ]]
+then
+  PATH=/opt/homebrew/bin:$PATH
+fi
 HOMEBREW_PREFIX=$(brew --prefix)
 FPATH="$HOMEBREW_PREFIX/share/zsh/site-functions:${FPATH}"
 
@@ -57,6 +60,16 @@ path=(
   $path
   $HOMEBREW_PREFIX/opt/openssl/bin
 )
+
+# Link to keg-only packages
+if [[ "$HOMEBREW_PREFIX" == "/opt/homebrew" ]]
+then
+  path=(
+    /opt/homebrew/opt/coreutils/libexec/gnubin
+    /opt/homebrew/opt/libpq/bin
+    $path
+  )
+fi
 
 # Development
 export FR_DOCKERHOST=docker.for.mac.localhost
