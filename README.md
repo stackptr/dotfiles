@@ -37,6 +37,7 @@ A modified version of [terminal-snazzy][snazzy] is checked in and can be added v
 - [reattach-to-user-namespace][tmux-reattach] - integrates macOS pasteboard commands in `tmux`
 - [`nvm`][nvm] - manage versions of Node
 - [`gh`][gh-cli] - Github CLI
+- [sudo-touchid][sudo-touchid] - enables TouchID for `sudo`
 
 ## Tips
 
@@ -55,4 +56,5 @@ A modified version of [terminal-snazzy][snazzy] is checked in and can be added v
 [tpm]: https://github.com/tmux-plugins/tpm
 [tmux-reattach]: https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
 [nvm]: https://github.com/nvm-sh/nvm
+[sudo-touchid]: https://github.com/artginzburg/sudo-touchid#readme
 [quit-safari]: https://daringfireball.net/2020/01/quit_confirmation_for_safari_on_macos
