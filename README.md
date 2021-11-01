@@ -6,7 +6,7 @@ Configurations, tooling, and tips for macOS setup.
 
 ### rcm
 
-Use [rcm][rcm] to install dotfiles:
+Use [`rcm`][rcm] to install dotfiles:
 
 ```
 cd ~
@@ -23,20 +23,20 @@ Dependencies:
 
 Aliases:
 - [`mosh`][mosh] extends `ssh` to support intermittent connectivity
-- [`hub`][hub] extends `git` with options to interface with Github (see also [gh][gh])
-- [`nvim`][neovim] replaces `vim` 
+- [`hub`][hub] extends `git` with options to interface with Github (see also [`gh`][gh])
+- [`nvim`][neovim] replaces `vim`
 - [`ccat`][ccat] adds syntax highlighting to `cat`
 
 ### Terminal profile
 
-A modified version of [terminal-snazzy][snazzy] is checked in and can be added via `Terminal.app` `Preferences` > `Profiles`. Make to mark as `Default` to apply to newly spawned windows.
+A modified version of [terminal-snazzy][snazzy] is checked in and can be added via Terminal.app `Preferences` > `Profiles`. Make to mark as `Default` to apply to newly spawned windows.
 
 ## Tools
 
-- [tpm][tpm] - Tmux plugin manager
-- [reattach-to-user-namespace][tmux-reattach] - Supports macOS pasteboard commands
-- [nvm][nvm] - manage versions of Node
-- [gh][gh-cli] - Github CLI
+- [tpm][tpm] - `tmux` plugin manager
+- [reattach-to-user-namespace][tmux-reattach] - integrates macOS pasteboard commands in `tmux`
+- [`nvm`][nvm] - manage versions of Node
+- [`gh`][gh-cli] - Github CLI
 
 ## Tips
 
