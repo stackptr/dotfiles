@@ -23,7 +23,7 @@ prompt pure
 HISTSIZE=50000
 SAVEHIST=10000
 
-source $HOME/zsh-histdb/sqlite-history.zsh
+source $HOME/.zsh/zsh-histdb/sqlite-history.zsh
 autoload -Uz add-zsh-hook
 HISTDB_TABULATE_CMD=(sed -e $'s/\x1f/\t/g')
 

@@ -21,7 +21,7 @@ Dependencies:
 - [pure prompt][pure]
 - [zsh-syntax-highlighting][zsh-highlight]
 - [zsh-history-substring-search][zsh-search]
-- [zsh-histdb][zsh-histdb]
+- [zsh-histdb][zsh-histdb] (clone to `~/.zsh`)
 
 Aliases:
 
