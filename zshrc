@@ -23,6 +23,7 @@ prompt pure
 HISTSIZE=50000
 SAVEHIST=10000
 
+# Load zsh-histdb
 source $HOME/.zsh/zsh-histdb/sqlite-history.zsh
 autoload -Uz add-zsh-hook
 HISTDB_TABULATE_CMD=(sed -e $'s/\x1f/\t/g')
@@ -59,7 +60,6 @@ set_alias () {
 set_alias git hub
 set_alias ssh mosh
 set_alias cat ccat
-alias incog='unset HISTFILE'
 
 path=(
   $HOME/.local/bin
