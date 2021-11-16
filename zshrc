@@ -1,6 +1,11 @@
 ### zsh config (~/.zshrc)
 ### github/stackptr
 
+# load custom executable functions
+for function in ~/.zsh/functions/*; do
+  source $function
+done
+
 # Include Homebrew in PATH and setup completions
 if [[ "$(uname -m)" == "arm64" ]]
 then
@@ -17,6 +22,10 @@ prompt pure
 [ -z "$HISTFILE" ] && HISTFILE="$HOME/.zsh_history"
 HISTSIZE=50000
 SAVEHIST=10000
+
+source $HOME/zsh-histdb/sqlite-history.zsh
+autoload -Uz add-zsh-hook
+HISTDB_TABULATE_CMD=(sed -e $'s/\x1f/\t/g')
 
 setopt extended_history       # record timestamp of command in HISTFILE
 setopt hist_expire_dups_first # delete duplicates first when HISTFILE size exceeds HISTSIZE
