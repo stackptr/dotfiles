@@ -1,0 +1,11 @@
+### zsh work config (~/.zshrc-work)
+### github/stackptr
+
+# Setup networking in API container
+export FR_DOCKERHOST=docker.for.mac.localhost
+
+# Support GHC on ARM-based systems
+export C_INCLUDE_PATH="`xcrun --show-sdk-path`/usr/include/ffi"
+
+# Improve performance compiling backend
+export GHC_OPTIONS="-fobject-code -j +RTS -A64m -n4m -RTS"

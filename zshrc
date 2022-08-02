@@ -80,10 +80,9 @@ then
   )
 fi
 
-# Development
-export FR_DOCKERHOST=docker.for.mac.localhost
-if [ -f ~/.zshrc-dev ]; then
-    source ~/.zshrc-dev
+# Work-specific configurations
+if [ -f ~/.zshrc-work ]; then
+    source ~/.zshrc-work
 fi
 
 export NVM_DIR="$HOME/.nvm"
