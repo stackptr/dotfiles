@@ -97,5 +97,3 @@ source "$HOMEBREW_PREFIX/share/zsh-history-substring-search/zsh-history-substrin
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
-type pyenv >/dev/null 2>&1 && eval "$(pyenv init -)"
-type rbenv >/dev/null 2>&1 && eval "$(rbenv init -)"
