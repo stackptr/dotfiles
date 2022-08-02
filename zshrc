@@ -97,3 +97,4 @@ source "$HOMEBREW_PREFIX/share/zsh-history-substring-search/zsh-history-substrin
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
+. $(brew --prefix asdf)/libexec/asdf.sh
