@@ -9,3 +9,19 @@ export C_INCLUDE_PATH="`xcrun --show-sdk-path`/usr/include/ffi"
 
 # Improve performance compiling backend
 export GHC_OPTIONS="-fobject-code -j +RTS -A64m -n4m -RTS"
+
+## Wrappers for `stack`
+
+# Build project and specs without running tests:
+#   sbuild fancy-api
+#
+# Omit argument to build everything
+sbuild () {
+  stack build --fast --pedantic --ghc-options="-DDEVELOPMENT $GHC_OPTIONS" "$1" --test --no-run-tests --file-watch
+}
+
+# Test specific matcher pattern with stack:
+#   stest project "matcher pattern"
+stest () {
+  stack build --fast --pedantic --ghc-options="-DDEVELOPMENT $GHC_OPTIONS"  --test "$1" --test-arguments='--match "$2"' --file-watch
+}
