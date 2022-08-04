@@ -23,5 +23,6 @@ sbuild () {
 # Test specific matcher pattern with stack:
 #   stest project "matcher pattern"
 stest () {
-  stack build --fast --pedantic --ghc-options="-DDEVELOPMENT $GHC_OPTIONS"  --test "$1" --test-arguments='--match "$2"' --file-watch
+  stack build --fast --pedantic --ghc-options="-DDEVELOPMENT $GHC_OPTIONS" \
+    --test "$1" --test-arguments="--match \"$2\"" --file-watch
 }
