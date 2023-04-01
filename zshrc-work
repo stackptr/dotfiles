@@ -20,11 +20,11 @@ export STACK_ARGS=(--fast --pedantic --ghc-options="-DDEVELOPMENT $GHC_OPTIONS")
 #
 # Omit argument to build everything
 sbuild () {
-  stack build "${STACK_ARGS[@]}" "$1" --test --no-run-tests --file-watch
+  AWS_PROFILE=freckle-dev stack build "${STACK_ARGS[@]}" "$1" --test --no-run-tests --file-watch
 }
 
 # Test specific matcher pattern with stack:
 #   stest project "matcher pattern"
 stest () {
-  stack build "${STACK_ARGS[@]}" --test "$1" --test-arguments="--match \"$2\"" --file-watch
+  AWS_PROFILE=freckle-dev stack build "${STACK_ARGS[@]}" --test "$1" --test-arguments="--match \"$2\"" --file-watch
 }
