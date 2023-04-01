@@ -1,3 +1,4 @@
 :set -Wall
+:set -XTypeApplications
 :set prompt "λ> "
 :set prompt-cont " | "
