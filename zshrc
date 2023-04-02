@@ -66,6 +66,7 @@ path=(
   $HOME/Development/bin
   $HOMEBREW_PREFIX/bin
   $HOMEBREW_PREFIX/sbin
+  $HOME/.ghcup/bin
   $path
   $HOMEBREW_PREFIX/opt/openssl/bin
 )
