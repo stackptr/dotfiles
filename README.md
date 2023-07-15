@@ -49,11 +49,6 @@ The `--remove-all` | `-r` flag removes any package not present in `env.nix`.
 
 A modified version of [terminal-snazzy][snazzy] is checked in and can be added via Terminal.app `Preferences` > `Profiles`. Make to mark as `Default` to apply to newly spawned windows.
 
-## Tools
-
-- [reattach-to-user-namespace][tmux-reattach] - integrates macOS pasteboard commands in `tmux`
-- [`gh`][gh-cli] - Github CLI
-
 ## Tips
 
 - [Quit Confirmation for Safari][quit-safari]: Remap ⌘Q to warn before quitting using FastScripts
@@ -64,8 +59,6 @@ A modified version of [terminal-snazzy][snazzy] is checked in and can be added v
 [zsh-search]: https://github.com/zsh-users/zsh-history-substring-search
 [mosh]: https://mosh.org
 [hub]: https://hub.github.com
-[gh-cli]: https://github.com/cli/cli
 [neovim]: https://neovim.io
 [snazzy]: https://github.com/sindresorhus/terminal-snazzy
-[tmux-reattach]: https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
 [quit-safari]: https://daringfireball.net/2020/01/quit_confirmation_for_safari_on_macos
