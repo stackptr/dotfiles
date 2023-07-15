@@ -44,6 +44,12 @@ A modified version of [terminal-snazzy][snazzy] is checked in and can be added v
 
 - [Quit Confirmation for Safari][quit-safari]: Remap ⌘Q to warn before quitting using FastScripts
 
+## Acknowledgements
+
+- [Using Nix on macOS][0] by Stephen Checkoway
+
+[0]: https://checkoway.net/musings/nix/
+
 [nix]: https://nixos.org/
 [rcm]: https://github.com/thoughtbot/rcm
 [snazzy]: https://github.com/sindresorhus/terminal-snazzy
