@@ -8,9 +8,11 @@ done
 
 FPATH="$HOME/.nix-profile/share/zsh/site-functions:${FPATH}"
 
-# Use Pure prompt
-autoload -U promptinit; promptinit
-prompt pure
+# Use Pure prompt outside of Warp
+if [ -z "$WARP_IS_LOCAL_SHELL_SESSION" ]; then
+  autoload -U promptinit; promptinit
+  prompt pure
+fi
 
 # History options (from oh-my-zsh)
 [ -z "$HISTFILE" ] && HISTFILE="$HOME/.zsh_history"
