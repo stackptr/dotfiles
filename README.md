@@ -22,24 +22,17 @@ git clone stackptr/dotfiles .dotfiles
 rcup -d .dotfiles -v
 ```
 
-Install all dependencies in `env.nix`:
-
-```
-nix-env -irf ~/env.nix
-```
-
 ## Updating
 
 The revision of `nixpkgs` is defined in `~/.nix-defexpr/nixpkgs/default.nix`
 and is updated by running `nix-update-nixpkgs`.
 
-Update packages in `env.nix` at the current revision:
+Install packages in `env.nix` at the current revision, removing any packages
+not present:
 
 ```
 nix-env -irf ~/env.nix
 ```
-
-The `--remove-all` | `-r` flag removes any package not present in `env.nix`.
 
 ## Configuration
 
