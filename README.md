@@ -51,7 +51,6 @@ A modified version of [terminal-snazzy][snazzy] is checked in and can be added v
 
 ## Tools
 
-- [tpm][tpm] - `tmux` plugin manager
 - [reattach-to-user-namespace][tmux-reattach] - integrates macOS pasteboard commands in `tmux`
 - [`gh`][gh-cli] - Github CLI
 
@@ -68,6 +67,5 @@ A modified version of [terminal-snazzy][snazzy] is checked in and can be added v
 [gh-cli]: https://github.com/cli/cli
 [neovim]: https://neovim.io
 [snazzy]: https://github.com/sindresorhus/terminal-snazzy
-[tpm]: https://github.com/tmux-plugins/tpm
 [tmux-reattach]: https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
 [quit-safari]: https://daringfireball.net/2020/01/quit_confirmation_for_safari_on_macos

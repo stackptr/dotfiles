@@ -8,8 +8,10 @@ with import <nixpkgs> {}; [
   neovim
   pure-prompt
   rcm
+  reattach-to-user-namespace
   ripgrep
   shellcheck
+  tmux
   tree
   zsh-history-substring-search
   zsh-syntax-highlighting
