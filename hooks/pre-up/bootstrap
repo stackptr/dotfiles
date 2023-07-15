@@ -1,0 +1,10 @@
+#!/usr/bin/env zsh
+
+set -eu
+
+DOTFILES_DIR=~/.dotfiles
+
+if [ ! -f "${HOME}/.rcrc" ]; then
+  echo "bootstrapping ~/.rcrc" 1>&2
+  cp "${DOTFILES_DIR}/rcrc" "${HOME}/.rcrc"
+fi
