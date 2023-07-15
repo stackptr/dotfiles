@@ -6,13 +6,7 @@ for function in ~/.zsh/functions/*; do
   source $function
 done
 
-# Include Homebrew in PATH and setup completions
-if [[ "$(uname -m)" == "arm64" ]]
-then
-  PATH=/opt/homebrew/bin:$PATH
-fi
-HOMEBREW_PREFIX=$(brew --prefix)
-FPATH="$HOMEBREW_PREFIX/share/zsh/site-functions:${FPATH}"
+FPATH="$HOME/.nix-profile/share/zsh/site-functions:${FPATH}"
 
 # Use Pure prompt
 autoload -U promptinit; promptinit
@@ -40,8 +34,6 @@ fi
 
 # Compilation flags
 export ARCHFLAGS="-arch arm64"
-export CPATH="$HOMEBREW_PREFIX/include"
-export LIBRARY_PATH="$HOMEBREW_PREFIX/lib"
 
 # ssh
 export SSH_KEY_PATH="~/.ssh/rsa_id"
@@ -58,22 +50,9 @@ set_alias ssh mosh
 path=(
   $HOME/.local/bin
   $HOME/Development/bin
-  $HOMEBREW_PREFIX/bin
-  $HOMEBREW_PREFIX/sbin
   $HOME/.ghcup/bin
   $path
-  $HOMEBREW_PREFIX/opt/openssl/bin
 )
-
-# Link to keg-only packages
-if [[ "$HOMEBREW_PREFIX" == "/opt/homebrew" ]]
-then
-  path=(
-    /opt/homebrew/opt/coreutils/libexec/gnubin
-    /opt/homebrew/opt/libpq/bin
-    $path
-  )
-fi
 
 # Work-specific configurations
 if [ -f ~/.zshrc-work ]; then
@@ -85,11 +64,10 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Syntax highlighting
-source "$HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+source "$HOME/.nix-profile/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 # History search
-source "$HOMEBREW_PREFIX/share/zsh-history-substring-search/zsh-history-substring-search.zsh"
+source "$HOME/.nix-profile/share/zsh-history-substring-search/zsh-history-substring-search.zsh"
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
-. $(brew --prefix asdf)/libexec/asdf.sh
