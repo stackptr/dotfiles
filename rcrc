@@ -1,1 +1,2 @@
 EXCLUDES="README.md *.terminal"
+UNDOTTED="env.nix"

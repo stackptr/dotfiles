@@ -21,14 +21,12 @@ Dependencies:
 - [pure prompt][pure]
 - [zsh-syntax-highlighting][zsh-highlight]
 - [zsh-history-substring-search][zsh-search]
-- [zsh-histdb][zsh-histdb] (clone to `~/.zsh`)
 
 Aliases:
 
 - [`mosh`][mosh] extends `ssh` to support intermittent connectivity
 - [`hub`][hub] extends `git` with options to interface with Github (see also [`gh`][gh])
 - [`nvim`][neovim] replaces `vim`
-- [`ccat`][ccat] adds syntax highlighting to `cat`
 
 Functions:
 
