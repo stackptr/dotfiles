@@ -28,8 +28,6 @@ Install all dependencies in `env.nix`:
 nix-env -irf ~/env.nix
 ```
 
-[nix]: https://nixos.org/
-
 ## Updating
 
 The revision of `nixpkgs` is defined in `~/.nix-defexpr/nixpkgs/default.nix`
@@ -53,6 +51,7 @@ A modified version of [terminal-snazzy][snazzy] is checked in and can be added v
 
 - [Quit Confirmation for Safari][quit-safari]: Remap ⌘Q to warn before quitting using FastScripts
 
+[nix]: https://nixos.org/
 [rcm]: https://github.com/thoughtbot/rcm
 [snazzy]: https://github.com/sindresorhus/terminal-snazzy
 [quit-safari]: https://daringfireball.net/2020/01/quit_confirmation_for_safari_on_macos
