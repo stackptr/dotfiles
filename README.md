@@ -1,12 +1,20 @@
 # dotfiles
 
-Configurations, tooling, and tips for macOS setup.
+## Bootstrapping
 
-## Configuration
+Packages are declared and installed using [Nix][nix]. Install it:
 
-### rcm
+```
+sh <(curl -L https://nixos.org/nix/install)
+```
 
-Use [`rcm`][rcm] to install dotfiles:
+Install [`rcm`][rcm] after opening a new shell session:
+
+```
+nix-env -iA rcm
+```
+
+Clone this repo and install dotfiles:
 
 ```
 cd ~
@@ -14,23 +22,28 @@ git clone stackptr/dotfiles .dotfiles
 rcup -d .dotfiles -v
 ```
 
-### zsh
+Install all dependencies in `env.nix`:
 
-Dependencies:
+```
+nix-env -irf ~/env.nix
+```
 
-- [pure prompt][pure]
-- [zsh-syntax-highlighting][zsh-highlight]
-- [zsh-history-substring-search][zsh-search]
+[nix]: https://nixos.org/
 
-Aliases:
+## Updating
 
-- [`mosh`][mosh] extends `ssh` to support intermittent connectivity
-- [`hub`][hub] extends `git` with options to interface with Github (see also [`gh`][gh])
-- [`nvim`][neovim] replaces `vim`
+The revision of `nixpkgs` is defined in `~/.nix-defexpr/nixpkgs/default.nix`
+and is updated by running `nix-update-nixpkgs`.
 
-Functions:
+Update packages in `env.nix` at the current revision:
 
-- [`jog`][jog] prints the last 10 commands invoked in the current directory
+```
+nix-env -irf ~/env.nix
+```
+
+The `--remove-all` | `-r` flag removes any package not present in `env.nix`.
+
+## Configuration
 
 ### Terminal profile
 
@@ -52,13 +65,10 @@ A modified version of [terminal-snazzy][snazzy] is checked in and can be added v
 [pure]: https://github.com/sindresorhus/pure
 [zsh-highlight]: https://github.com/zsh-users/zsh-syntax-highlighting
 [zsh-search]: https://github.com/zsh-users/zsh-history-substring-search
-[zsh-histdb]: https://github.com/larkery/zsh-histdb
 [mosh]: https://mosh.org
 [hub]: https://hub.github.com
 [gh-cli]: https://github.com/cli/cli
 [neovim]: https://neovim.io
-[ccat]: https://github.com/jingweno/ccat
-[jog]: https://news.ycombinator.com/item?id=29154942&utm_term=comment
 [snazzy]: https://github.com/sindresorhus/terminal-snazzy
 [tpm]: https://github.com/tmux-plugins/tpm
 [tmux-reattach]: https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
