@@ -54,11 +54,5 @@ A modified version of [terminal-snazzy][snazzy] is checked in and can be added v
 - [Quit Confirmation for Safari][quit-safari]: Remap ⌘Q to warn before quitting using FastScripts
 
 [rcm]: https://github.com/thoughtbot/rcm
-[pure]: https://github.com/sindresorhus/pure
-[zsh-highlight]: https://github.com/zsh-users/zsh-syntax-highlighting
-[zsh-search]: https://github.com/zsh-users/zsh-history-substring-search
-[mosh]: https://mosh.org
-[hub]: https://hub.github.com
-[neovim]: https://neovim.io
 [snazzy]: https://github.com/sindresorhus/terminal-snazzy
 [quit-safari]: https://daringfireball.net/2020/01/quit_confirmation_for_safari_on_macos
