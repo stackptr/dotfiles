@@ -69,3 +69,4 @@ source "$HOME/.nix-profile/share/zsh-history-substring-search/zsh-history-substr
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
+printf '\eP$f{"hook": "SourcedRcFileForWarp", "value": { "shell": "zsh" }}\x9c'
