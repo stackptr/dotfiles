@@ -1,5 +1,8 @@
 with import <nixpkgs> {}; [
+  awscli2
   coreutils-full
+  /* temporary workaround: https://github.com/docker/compose/issues/10751 */
+  docker-compose
   fd
   gh
   hub
