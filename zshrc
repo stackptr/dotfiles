@@ -54,7 +54,6 @@ set_alias ssh mosh
 path=(
   $HOME/.local/bin
   $HOME/Development/bin
-  $HOME/.ghcup/bin
   $path
 )
 
