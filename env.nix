@@ -1,4 +1,5 @@
 with import <nixpkgs> {}; [
+  any-nix-shell
   awscli2
   coreutils-full
   /* temporary workaround: https://github.com/docker/compose/issues/10751 */

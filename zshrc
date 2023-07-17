@@ -1,6 +1,8 @@
 ### zsh config (~/.zshrc)
 ### github/stackptr
 
+any-nix-shell zsh | source /dev/stdin
+
 # load custom executable functions
 for function in ~/.zsh/functions/*; do
   source $function
