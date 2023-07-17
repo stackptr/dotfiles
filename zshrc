@@ -11,7 +11,7 @@ done
 FPATH="$HOME/.nix-profile/share/zsh/site-functions:${FPATH}"
 
 # Pure prompt is not supported by Warp
-if [ -z "$WARP_IS_LOCAL_SHELL_SESSION" ]; then
+if [[ -n "$IN_NIX_SHELL" || -z "$WARP_IS_LOCAL_SHELL_SESSION" ]]; then
   autoload -U promptinit; promptinit
   prompt pure
 fi
