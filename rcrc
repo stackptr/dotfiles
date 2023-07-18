@@ -1,2 +1,3 @@
 EXCLUDES="README.md *.terminal"
 UNDOTTED="env.nix"
+SYMLINK_DIRS="zsh"
