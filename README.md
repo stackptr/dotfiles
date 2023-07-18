@@ -18,7 +18,7 @@ Clone this repo and install dotfiles:
 
 ```
 cd ~
-git clone stackptr/dotfiles .dotfiles
+git clone https://github.com/stackptr/dotfiles.git .dotfiles
 rcup -d .dotfiles -v
 ```
 
