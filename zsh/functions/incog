@@ -1,4 +1,3 @@
 incog () {
   unset HISTFILE
-  unset -f _histdb_addhistory
 }
