@@ -1,7 +1,9 @@
 ### zsh config (~/.zshrc)
 ### github/stackptr
 
-any-nix-shell zsh | source /dev/stdin
+if command -v nix-your-shell > /dev/null; then
+  nix-your-shell zsh | source /dev/stdin
+fi
 
 # load custom executable functions
 for function in ~/.zsh/functions/*; do

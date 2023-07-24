@@ -1,5 +1,4 @@
 with import <nixpkgs> {}; [
-  any-nix-shell
   awscli2
   btop
   coreutils-full
@@ -16,6 +15,7 @@ with import <nixpkgs> {}; [
   mosh
   neofetch
   neovim
+  nix-your-shell
   nodejs_20
   pure-prompt
   rcm
