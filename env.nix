@@ -16,6 +16,7 @@ with import <nixpkgs> {}; [
   mosh
   neofetch
   neovim
+  nodejs_20
   pure-prompt
   rcm
   reattach-to-user-namespace
