@@ -1,0 +1,13 @@
+{
+  "actions" : {
+    "build" : {
+      "enabled" : true,
+      "script" : "rcup -d ~\/.dotfiles"
+    },
+    "run" : {
+      "enabled" : true,
+      "script" : "nix-update-nixpkgs"
+    }
+  },
+  "buildBeforeRunning" : true
+}
