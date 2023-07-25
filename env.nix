@@ -1,4 +1,9 @@
-with import <nixpkgs> {}; [
+let
+  pkgs = import <nixpkgs> {};
+  nodejs = pkgs.nodejs_20;
+  yarn = pkgs.yarn.override { inherit nodejs; };
+in
+with pkgs; [
   awscli2
   btop
   coreutils-full
@@ -25,6 +30,7 @@ with import <nixpkgs> {}; [
   sox
   tmux
   tree
+  yarn
   yt-dlp
   yq
   zsh-history-substring-search
