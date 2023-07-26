@@ -12,6 +12,7 @@ with pkgs; [
   fd
   ffmpeg_6
   gh
+  gnupg
   htop
   hub
   jo
