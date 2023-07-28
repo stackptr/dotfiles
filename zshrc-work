@@ -25,3 +25,8 @@ sbuild () {
 stest () {
   AWS_PROFILE=freckle-dev stack build "${STACK_ARGS[@]}" --test "$1" --test-arguments="--match \"$2\"" --file-watch
 }
+
+# Purge package from stack to force rebuild
+spurge () {
+  stack exec -- ghc-pkg unregister --force "$1"
+}
