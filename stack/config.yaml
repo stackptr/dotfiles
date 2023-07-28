@@ -1,0 +1,2 @@
+ghc-options:
+  "$everything": "-fobject-code -j +RTS -A64m -n4m -RTS"
