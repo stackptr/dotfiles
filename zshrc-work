@@ -1,11 +1,6 @@
 ### zsh work config (~/.zshrc-work)
 ### github/stackptr
 
-# Link LLVM
-export PATH="/opt/homebrew/opt/llvm@12/bin:$PATH"
-export LDFLAGS="-L/opt/homebrew/opt/llvm@12/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/llvm@12/include"
-
 # Setup networking in API container
 export FR_DOCKERHOST=docker.for.mac.localhost
 
