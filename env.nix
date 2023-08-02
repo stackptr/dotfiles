@@ -34,6 +34,7 @@ with pkgs; [
   yarn
   yt-dlp
   yq
+  zsh
   zsh-history-substring-search
   zsh-syntax-highlighting
 ]
