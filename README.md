@@ -36,6 +36,14 @@ nix-env -irf ~/env.nix
 
 ## Configuration
 
+### Git
+
+Set the sequence editor used for rebases, cherry picks, etc.:
+ 
+```
+git config --global sequence.editor interactive-rebase-tool
+```
+
 ### Terminal profile
 
 A modified version of [terminal-snazzy][snazzy] is checked in and can be added via Terminal.app `Preferences` > `Profiles`. Make to mark as `Default` to apply to newly spawned windows.

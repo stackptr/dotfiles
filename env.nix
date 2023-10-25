@@ -12,6 +12,7 @@ with pkgs; [
   fd
   ffmpeg_6
   gh
+  git-interactive-rebase-tool
   gnupg
   htop
   hub
