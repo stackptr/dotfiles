@@ -24,6 +24,7 @@ with pkgs; [
   neovim
   nix-your-shell
   nodejs_20
+  nushell
   pure-prompt
   rcm
   reattach-to-user-namespace
