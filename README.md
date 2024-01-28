@@ -1,3 +1,6 @@
+> [!NOTE]  
+> These dotfiles are no longer maintained. Current configuration is done in [stackptr/rc](https://github.com/stackptr/rc)
+
 # dotfiles
 
 ## Bootstrapping
